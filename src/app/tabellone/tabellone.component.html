@@ -1,3 +1,10 @@
-<p>
-  tabellone works!
-</p>
+<div class="tabellone">
+  <header>
+    <h1>Tabellone tombola</h1>
+  </header>
+  <div class="tabellone-body">
+    <ng-template ngFor let-c [ngForOf]="Numbers">
+      <div class="cell" [innerText]="c"></div>
+    </ng-template>
+  </div>
+</div>

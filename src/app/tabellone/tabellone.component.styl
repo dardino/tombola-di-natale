@@ -1,0 +1,87 @@
+.tabellone 
+    width: 19cm;
+    height: 22cm;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    border: solid .1mm #000;
+    box-sizing: border-box;
+
+    header 
+        border solid .1mm black
+        padding: 10mm;
+        background-color: #000077
+        color: #c1c1c1
+    
+    .tabellone-body
+        padding: 10mm;
+        display: grid
+        grid-template-columns: repeat(10, 1fr)
+        grid-template-rows: repeat(9, 1fr)
+        height 15cm
+    
+    .cell
+        display: flex;
+        align-items: center
+        border solid .1mm #c1c1c1
+        justify-content center
+        box-sizing: border-box;
+        &:nth-child(21),
+        &:nth-child(22),
+        &:nth-child(23),
+        &:nth-child(24),
+        &:nth-child(25),
+        &:nth-child(26),
+        &:nth-child(27),
+        &:nth-child(28),
+        &:nth-child(29),
+        &:nth-child(30)
+            border-bottom: solid .5mm red
+        &:nth-child(31),
+        &:nth-child(32),
+        &:nth-child(33),
+        &:nth-child(34),
+        &:nth-child(35),
+        &:nth-child(36),
+        &:nth-child(37),
+        &:nth-child(38),
+        &:nth-child(39),
+        &:nth-child(40)
+            border-top: solid .5mm red
+        &:nth-child(-n+10)
+            border-top: solid 1mm red
+        &:nth-last-child(-n+10)
+            border-bottom: solid 1mm red
+        &:nth-child(5n+1)
+            border-left: solid .5mm red
+        &:nth-child(5n+0)
+            border-right: solid .5mm red
+        &:nth-child(10n+1)
+            border-left: solid 1mm red
+        &:nth-child(10n+0)
+            border-right: solid 1mm red
+
+        &:nth-child(51),
+        &:nth-child(52),
+        &:nth-child(53),
+        &:nth-child(54),
+        &:nth-child(55),
+        &:nth-child(56),
+        &:nth-child(57),
+        &:nth-child(58),
+        &:nth-child(59),
+        &:nth-child(60)
+            border-bottom: solid .5mm red
+        &:nth-child(61),
+        &:nth-child(62),
+        &:nth-child(63),
+        &:nth-child(64),
+        &:nth-child(65),
+        &:nth-child(66),
+        &:nth-child(67),
+        &:nth-child(68),
+        &:nth-child(69),
+        &:nth-child(70)
+            border-top: solid .5mm red
