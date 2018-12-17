@@ -1,3 +1,7 @@
-<p>
-  cartella works!
-</p>
+<div>
+  <ng-template ngFor let-row [ngForOf]="cartella.Righe">
+      <ng-template ngFor let-num [ngForOf]="row" let-i="index">
+        <div [innerText]="i"></div>
+      </ng-template>
+  </ng-template>
+</div>
