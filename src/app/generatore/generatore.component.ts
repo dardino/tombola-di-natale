@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ICartella } from "../cartella/cartella.component";
+import { Serie } from "src/lib/GeneratoreCartelle";
 
 @Component({
   selector: "tdn-generatore",
@@ -28,8 +28,7 @@ export class GeneratoreComponent implements OnInit {
     this.serie.push(this.getEmptySerie(91));
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   private getEmptySerie(startN: number): Serie {
     return [
@@ -50,4 +49,3 @@ export class GeneratoreComponent implements OnInit {
     ];
   }
 }
-type Serie = [ICartella, ICartella, ICartella, ICartella, ICartella, ICartella];
