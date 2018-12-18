@@ -6,8 +6,14 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./cartella.component.styl"]
 })
 export class CartellaComponent implements OnInit {
+  /** proprietà cartella */
   cartella: ICartella;
-
+  public get Righe() {
+    if (this.cartella) {
+      return this.cartella.Righe;
+    }
+    return [];
+  }
   constructor() {}
 
   ngOnInit() {}

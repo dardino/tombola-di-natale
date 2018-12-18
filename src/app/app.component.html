@@ -7,10 +7,10 @@
 <!-- <h2>Cosa vuoi fare?</h2> -->
 <ul class="menu">
   <li>
-    <h2><a href="tabellone">Tabellone</a></h2>
+    <h2><a routerLink="/tabellone" routerLinkActive="active" href="tabellone">Tabellone</a></h2>
   </li>
   <li>
-    <h2><a href="generatore">Generatore di cartelle</a></h2>
+    <h2><a routerLink="/generatore" routerLinkActive="active" href="generatore">Generatore di cartelle</a></h2>
   </li>
   <!-- <li>
     <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
@@ -24,7 +24,7 @@
 </ul>
 
 <router-outlet></router-outlet>
-<a href="https://github.com/dardino/tombola-di-natale"><img 
-  style="position: absolute; top: 0; right: 0; border: 0;" 
+<a href="https://github.com/dardino/tombola-di-natale"><img
+  style="position: fixed; top: 0; right: 0; border: 0; z-index: 2;"
   src="assets/forkme_right_white_ffffff.png"
   alt="Fork me on GitHub"></a>

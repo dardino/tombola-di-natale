@@ -9,20 +9,44 @@ import { ICartella } from "../cartella/cartella.component";
 export class GeneratoreComponent implements OnInit {
   serie: Array<Serie> = [];
 
-  constructor() {}
-
-  ngOnInit() {
+  constructor() {
     this.serie.push(this.getEmptySerie(1));
+    this.serie.push(this.getEmptySerie(7));
+    this.serie.push(this.getEmptySerie(13));
+    this.serie.push(this.getEmptySerie(19));
+    this.serie.push(this.getEmptySerie(25));
+    this.serie.push(this.getEmptySerie(31));
+    this.serie.push(this.getEmptySerie(37));
+    this.serie.push(this.getEmptySerie(43));
+    this.serie.push(this.getEmptySerie(49));
+    this.serie.push(this.getEmptySerie(55));
+    this.serie.push(this.getEmptySerie(61));
+    this.serie.push(this.getEmptySerie(67));
+    this.serie.push(this.getEmptySerie(73));
+    this.serie.push(this.getEmptySerie(79));
+    this.serie.push(this.getEmptySerie(85));
+    this.serie.push(this.getEmptySerie(91));
   }
 
-  getEmptySerie(startN: number): Serie {
+  ngOnInit() {
+  }
+
+  private getEmptySerie(startN: number): Serie {
     return [
-      { Numero: startN + 0, Righe: [] },
-      { Numero: startN + 1, Righe: [] },
-      { Numero: startN + 2, Righe: [] },
-      { Numero: startN + 3, Righe: [] },
-      { Numero: startN + 4, Righe: [] },
-      { Numero: startN + 5, Righe: [] }
+      { Numero: startN + 0, Righe: this.getEmptyRows() },
+      { Numero: startN + 1, Righe: this.getEmptyRows() },
+      { Numero: startN + 2, Righe: this.getEmptyRows() },
+      { Numero: startN + 3, Righe: this.getEmptyRows() },
+      { Numero: startN + 4, Righe: this.getEmptyRows() },
+      { Numero: startN + 5, Righe: this.getEmptyRows() }
+    ];
+  }
+
+  private getEmptyRows(): Array<number[]> {
+    return [
+      [null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null],
+      [null, null, null, null, null, null, null, null, null]
     ];
   }
 }
