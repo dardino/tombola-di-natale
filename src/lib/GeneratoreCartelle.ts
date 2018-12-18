@@ -24,8 +24,9 @@ export class Generator {
         `Non sono riuscito a piazzare i seguenti numeri:`,
         unplacedNumbers
       );
-      serie.forEach(c => c.ToConsole());
     }
+    serie.forEach(c => c.SortNumbers());
+    serie.forEach(c => c.ToConsole());
     return unplacedNumbers.length === 0;
   }
 
@@ -35,13 +36,28 @@ export class Generator {
 
       const numero = seq[0];
       const colonna = GetColumnOfNumber(numero);
-      const placed = false;
       const firstUncompleted = serie.filter(c => !c.IsComplete())[0];
       const info = firstUncompleted.GetUncompletedInfo();
+      let placed = false;
 
       for (let carx = 0; carx < serie.length; carx++) {
         const cartella = serie[carx];
-
+        const row =  cartella.GetRowForColButCol(info.FreeColumns[0], colonna);
+        if (row == null) {
+           continue;
+        }
+        const num2mv = cartella.RimuoviDallaCartella(cartella.Righe.indexOf(row), info.FreeColumns[0]);
+        if (num2mv) {
+          const mvPlaced = firstUncompleted.PosizionaInCartella(num2mv, true);
+          if (mvPlaced) {
+            placed = cartella.PosizionaInCartella(numero, true);
+            if (placed) {
+              break;
+            }
+          } else {
+            unplacedNumbers.push(num2mv);
+          }
+        }
       }
 
       if (!placed) {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { Cartella } from "src/lib/Cartella";
 @Component({
   selector: "tdn-cartella",
@@ -7,15 +7,16 @@ import { Cartella } from "src/lib/Cartella";
 })
 export class CartellaComponent implements OnInit {
   /** proprietà cartella */
-  cartella: Cartella;
+  @Input()
+  car: Cartella;
 
   public get Numero() {
-    return this.cartella ? this.cartella.Numero : 0;
+    return this.car ? this.car.Numero : 0;
   }
 
   public get Righe() {
-    if (this.cartella) {
-      return this.cartella.Righe;
+    if (this.car) {
+      return this.car.Righe;
     }
     return [];
   }

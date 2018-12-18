@@ -1,3 +1,25 @@
 .cartella
   display grid
+  border solid .2mm #c1c1c1
+  background-color: #fff
+  width 15cm
+  height 10cm
+  grid-template-rows 1fr 2.7cm 2.7cm 2.7cm
+  grid-template-columns repeat(9, 1fr)
+  padding: 1em
 
+  > header
+    background: white
+    grid-column-start: 1;
+    grid-column-end: 10;
+
+    > h2
+      padding: 0
+      margin: 0
+
+.num
+  border solid .1mm #c1c1c1
+  display flex
+  font-size 2em
+  align-items center
+  justify-content center

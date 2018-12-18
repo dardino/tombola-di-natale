@@ -4,7 +4,7 @@
   </header>
   <ng-template ngFor let-row [ngForOf]="Righe">
     <ng-template ngFor let-num [ngForOf]="row || []" let-i="index">
-      <div [innerText]="i"></div>
+      <div class="num" [innerText]="num"></div>
     </ng-template>
   </ng-template>
 </div>

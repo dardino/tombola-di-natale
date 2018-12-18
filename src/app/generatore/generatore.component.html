@@ -1,6 +1,6 @@
 <ng-template ngFor let-cartelle let-i="index" [ngForOf]="serie">
   <span class="numero-serie" [innerText]="i"></span>
   <ng-template ngFor let-cartella [ngForOf]="cartelle">
-    <tdn-cartella cartella="cartella"></tdn-cartella>
+    <tdn-cartella [car]="cartella"></tdn-cartella>
   </ng-template>
 </ng-template>
