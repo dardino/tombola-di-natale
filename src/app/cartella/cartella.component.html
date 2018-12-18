@@ -1,7 +1,10 @@
-<div>
+<div class="cartella">
+  <header>
+    <h2 [innerText]="Numero"></h2>
+  </header>
   <ng-template ngFor let-row [ngForOf]="Righe">
-      <ng-template ngFor let-num [ngForOf]="row || []" let-i="index">
-        <div [innerText]="i"></div>
-      </ng-template>
+    <ng-template ngFor let-num [ngForOf]="row || []" let-i="index">
+      <div [innerText]="i"></div>
+    </ng-template>
   </ng-template>
 </div>
