@@ -6,15 +6,25 @@ import { AppComponent } from "./app.component";
 import { CartellaComponent } from "./cartella/cartella.component";
 import { TabelloneComponent } from "./tabellone/tabellone.component";
 import { GeneratoreComponent } from "./generatore/generatore.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { PremiComponent } from "./premi/premi.component";
+import { MatInputModule, MatCheckboxModule } from "@angular/material";
 
 @NgModule({
   declarations: [
     AppComponent,
     CartellaComponent,
     TabelloneComponent,
-    GeneratoreComponent
+    GeneratoreComponent,
+    PremiComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatCheckboxModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
