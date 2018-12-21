@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Serie, Generator } from "src/lib/GeneratoreCartelle";
 import { Cartella } from "src/lib/Cartella";
+import * as jsPDF from "jspdf";
 
 @Component({
   selector: "tdn-generatore",
@@ -28,6 +29,12 @@ export class GeneratoreComponent implements OnInit {
     const p15 = this.getEmptySerie(85);    this.serie.push(p15);    Generator.TryToFillSerie(p15);
     const p16 = this.getEmptySerie(91);    this.serie.push(p16);    Generator.TryToFillSerie(p16);
   }
+
+  // CreaPdf() {
+  //   const doc = new jsPDF();
+  //   doc.text("Hello world!", 10, 10);
+  //   doc.save("a4.pdf");
+  // }
 
   ngOnInit() {
 

@@ -1,11 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div id="header">
   <h1>
     Benvenuto alla {{ title }}!
   </h1>
 </div>
 <!-- <h2>Cosa vuoi fare?</h2> -->
-<ul class="menu">
+<ul class="menu" id="nav">
   <li>
     <h2><a routerLink="/tabellone" routerLinkActive="active" href="tabellone">Tabellone</a></h2>
   </li>
@@ -24,7 +24,9 @@
 </ul>
 
 <router-outlet></router-outlet>
-<a href="https://github.com/dardino/tombola-di-natale"><img
-  style="position: fixed; top: 0; right: 0; border: 0; z-index: 2;"
-  src="assets/forkme_right_white_ffffff.png"
-  alt="Fork me on GitHub"></a>
+<div id="footer">
+  <a href="https://github.com/dardino/tombola-di-natale"><img
+    style="position: fixed; top: 0; right: 0; border: 0; z-index: 2;"
+    src="assets/forkme_right_white_ffffff.png"
+    alt="Fork me on GitHub"></a>
+</div>

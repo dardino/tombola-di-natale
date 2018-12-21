@@ -1,10 +1,27 @@
+.gen-container
+  text-align: center;
+  width: 28cm;
+
+tdn-cartella {
+  display inline-block
+  width 14cm;
+}
+
 .numero-serie
+  width: 100%
+  flex: 0 0 auto;
   color: #fff;
-  background-color: #000;
+  background-color: #ffa20057;
+  margin: 1em 0;
   display: flex;
   height: 2.5em;
-  width: 2.5em;
+  // width: 2.5em;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 1.25em;
   border: solid 0.2mm #c1c1c1;
+  page-break-after: always
+
+@media print
+  .numero-serie
+    display none !important
