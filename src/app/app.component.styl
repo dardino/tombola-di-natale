@@ -1,50 +1,57 @@
-.menu
-    position fixed
-    top 0
-    display flex
-    margin 0
-    padding 0 1rem
-    left 0
-    right 0
-    border-bottom: solid 1px #c1c1c1
-    background-color: rgba(0,0,0,.5)
-    box-shadow: 0 0 5px 2px #6f6f6f
-    list-style: none
-    z-index 2
+.tda-container
+  background: rgba(0, 0, 0, 0.1);
 
-    h2
-      margin: 0
+.tda-header
+  position sticky
+  top 0
+  z-index 2
 
-    li
-      display: block
-      padding: 0 1rem
+// .menu
+//     position fixed
+//     top 0
+//     display flex
+//     margin 0
+//     padding 0 1rem
+//     left 0
+//     right 0
+//     border-bottom: solid 1px #c1c1c1
+//     background-color: rgba(0,0,0,.5)
+//     box-shadow: 0 0 5px 2px #6f6f6f
+//     list-style: none
+//     z-index 2
 
-    a
-      text-decoration none
-      color #c1c1c1
-      position: relative
-      padding .5em;
-      display inline-block
+//     h2
+//       margin: 0
 
-      &.active
-        color: yellow
-        &:hover
-          color: yellow
+//     li
+//       display: block
+//       padding: 0 1rem
 
-      &:hover
-        color: #fff
+//     a
+//       text-decoration none
+//       color #c1c1c1
+//       position: relative
+//       padding .5em;
+//       display inline-block
 
-        &:before
-          content: " ";
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background-image: radial-gradient(#ffffff78 0%,#ffffff00 75%);
+//       &.active
+//         color: yellow
+//         &:hover
+//           color: yellow
 
+//       &:hover
+//         color: #fff
+
+//         &:before
+//           content: " ";
+//           display: block;
+//           position: absolute;
+//           top: 0;
+//           left: 0;
+//           right: 0;
+//           bottom: 0;
+//           background-image: radial-gradient(#ffffff78 0%,#ffffff00 75%);
 
 @media print
   /* All your print styles go here */
-  #header, #footer, #nav { display: none !important; }
+  .tda-header { display: none !important; }

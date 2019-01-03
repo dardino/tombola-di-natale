@@ -8,7 +8,17 @@ import { TabelloneComponent } from "./tabellone/tabellone.component";
 import { GeneratoreComponent } from "./generatore/generatore.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { PremiComponent } from "./premi/premi.component";
-import { MatInputModule, MatCheckboxModule } from "@angular/material";
+import {
+  MatInputModule,
+  MatCheckboxModule,
+  MatSidenavModule,
+  MatButtonModule,
+  MatToolbarModule,
+  MatSlideToggleModule,
+  MatListModule
+} from "@angular/material";
+import { ServiceWorkerModule } from "@angular/service-worker";
+import { environment } from "../environments/environment";
 
 @NgModule({
   declarations: [
@@ -22,8 +32,16 @@ import { MatInputModule, MatCheckboxModule } from "@angular/material";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
     MatInputModule,
-    MatCheckboxModule
+    MatButtonModule,
+    MatSlideToggleModule,
+    MatListModule,
+    MatSidenavModule,
+    MatCheckboxModule,
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      enabled: environment.production
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
