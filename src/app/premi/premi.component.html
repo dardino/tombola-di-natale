@@ -1,14 +1,18 @@
-<form class="gen-premi">
-  <mat-form-field>
-    <input matInput placeholder="Montepremi raccolto" [(value)]="TotalAmount" />
-  </mat-form-field>
+<div class="gp-container">
+  <form class="gp-settings">
+    <mat-form-field>
+      <input matInput placeholder="Montepremi raccolto" [(value)]="TotalAmount" />
+    </mat-form-field>
 
-  <mat-slide-toggle [(checked)]="Ambo1">Ambo generico</mat-slide-toggle>
-  <mat-slide-toggle [(checked)]="Ambo2">Ambo lontano</mat-slide-toggle>
-  <mat-slide-toggle [(checked)]="Terno">Terno</mat-slide-toggle>
-  <mat-slide-toggle [(checked)]="Quaterna">Quaterna</mat-slide-toggle>
-  <mat-slide-toggle [(checked)]="Cinquina">3 Cinquine (sopra, in mezzo, sotto)</mat-slide-toggle>
-  <mat-slide-toggle [(checked)]="Tombola">Tombola</mat-slide-toggle>
-  <mat-slide-toggle [(checked)]="Tombolino">Tombolino</mat-slide-toggle>
+    <mat-slide-toggle [(checked)]="Ambo1">Ambo generico</mat-slide-toggle>
+    <mat-slide-toggle [(checked)]="Ambo2">Ambo lontano</mat-slide-toggle>
+    <mat-slide-toggle [(checked)]="Terno">Terno</mat-slide-toggle>
+    <mat-slide-toggle [(checked)]="Quaterna">Quaterna</mat-slide-toggle>
+    <mat-slide-toggle [(checked)]="Cinquina">3 Cinquine (sopra, in mezzo, sotto)</mat-slide-toggle>
+    <mat-slide-toggle [(checked)]="Tombola">Tombola</mat-slide-toggle>
+    <mat-slide-toggle [(checked)]="Tombolino">Tombolino</mat-slide-toggle>
 
-</form>
+  </form>
+  <div class="gp-premi">
+  </div>
+</div>
