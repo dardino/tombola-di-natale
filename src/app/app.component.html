@@ -1,12 +1,12 @@
 <ng-container>
-  <mat-toolbar class="tda-header">
-    <button mat-button (click)="sidenav.toggle()">Nav</button>
+  <mat-toolbar class="tda-header mat-elevation-z8" color="primary">
+    <button mat-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
     <h1>Gestione tombola di Natale</h1>
     <a rel="noopener" target="_blank" href="https://github.com/dardino/tombola-di-natale"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 2;"
         src="assets/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
   </mat-toolbar>
   <mat-sidenav-container class="tda-container">
-    <mat-sidenav #sidenav mode="over" [(opened)]="opened" (click)="sidenav.toggle()">
+    <mat-sidenav #sidenav mode="over" [(opened)]="opened" (click)="sidenav.toggle()" role="navigation">
       <mat-nav-list>
         <mat-list-item><a routerLink="/tabellone" routerLinkActive="active" href="tabellone">Tabellone</a></mat-list-item>
         <mat-list-item><a routerLink="/generatore" routerLinkActive="active" href="generatore">Generatore di cartelle</a></mat-list-item>

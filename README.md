@@ -4,6 +4,10 @@
 - [x] This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 - [x] Then is updated to [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
+## Material Theme
+
+[Color Tool](https://material.io/tools/color/#!/?view.left=1&view.right=0&primary.color=B0BEC5&secondary.color=263238&secondary.text.color=ECEFF1&primary.text.color=263238)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

@@ -5,6 +5,7 @@ import { GeneratoreComponent } from "./generatore/generatore.component";
 import { PremiComponent } from "./premi/premi.component";
 
 const routes: Routes = [
+  { path: "", redirectTo: "/premi", pathMatch: "full" },
   { path: "tabellone", component: TabelloneComponent },
   { path: "generatore", component: GeneratoreComponent },
   { path: "premi", component: PremiComponent }

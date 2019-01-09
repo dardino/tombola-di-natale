@@ -15,7 +15,8 @@ import {
   MatButtonModule,
   MatToolbarModule,
   MatSlideToggleModule,
-  MatListModule
+  MatListModule,
+  MatIconModule
 } from "@angular/material";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
@@ -34,6 +35,7 @@ import { environment } from "../environments/environment";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatInputModule,
+    MatIconModule,
     MatButtonModule,
     MatSlideToggleModule,
     MatListModule,
