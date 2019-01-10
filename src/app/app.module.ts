@@ -16,10 +16,12 @@ import {
   MatToolbarModule,
   MatSlideToggleModule,
   MatListModule,
-  MatIconModule
+  MatIconModule,
+  MatCardModule
 } from "@angular/material";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { environment } from "../environments/environment";
     CartellaComponent,
     TabelloneComponent,
     GeneratoreComponent,
-    PremiComponent
+    PremiComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +38,7 @@ import { environment } from "../environments/environment";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatInputModule,
+    MatCardModule,
     MatIconModule,
     MatButtonModule,
     MatSlideToggleModule,
