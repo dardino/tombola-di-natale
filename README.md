@@ -2,7 +2,7 @@
 [![Build Status](https://gabrielebrunoriwki.visualstudio.com/tomboladinatale/_apis/build/status/tomboladinatale-rg%20-%20CI?branchName=master)](https://gabrielebrunoriwki.visualstudio.com/tomboladinatale/_build/latest?definitionId=1?branchName=master)
 
 - [x] This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
-- [x] Current Angular CLI version: [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+- [x] Current Angular CLI version: [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
 ## Material Theme
 

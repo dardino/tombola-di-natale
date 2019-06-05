@@ -8,17 +8,15 @@ import { TabelloneComponent } from "./tabellone/tabellone.component";
 import { GeneratoreComponent } from "./generatore/generatore.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { PremiComponent } from "./premi/premi.component";
-import {
-  MatInputModule,
-  MatCheckboxModule,
-  MatSidenavModule,
-  MatButtonModule,
-  MatToolbarModule,
-  MatSlideToggleModule,
-  MatListModule,
-  MatIconModule,
-  MatCardModule
-} from "@angular/material";
+import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+import { MatIconModule } from "@angular/material/icon";
+import { MatInputModule } from "@angular/material/input";
+import { MatListModule } from "@angular/material/list";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatSlideToggleModule } from "@angular/material/slide-toggle";
+import { MatToolbarModule } from "@angular/material/toolbar";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
 import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
