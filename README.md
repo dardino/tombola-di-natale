@@ -1,5 +1,6 @@
 # Tombola Di Natale
 [![Build Status](https://gabrielebrunoriwki.visualstudio.com/tomboladinatale/_apis/build/status/tomboladinatale-rg%20-%20CI?branchName=master)](https://gabrielebrunoriwki.visualstudio.com/tomboladinatale/_build/latest?definitionId=1?branchName=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/87982db8c00afd867b6a/maintainability)](https://codeclimate.com/github/dardino/tombola-di-natale/maintainability)
 
 - [x] This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
 - [x] Current Angular CLI version: [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
