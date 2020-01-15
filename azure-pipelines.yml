@@ -12,6 +12,9 @@ trigger:
     include:
     - src/*
 
+# no PR triggers
+pr: none
+
 pool:
   name: Hosted VS2017
   demands: npm
