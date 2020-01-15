@@ -4,7 +4,13 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  batch: true
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - src/*
 
 pool:
   name: Hosted VS2017
@@ -25,7 +31,7 @@ steps:
 
 - script: 'ng build --prod'
   failOnStderr: true
-  displayName: 'Command Line Script'
+  displayName: 'Build angular app in prod mode'
 
 - task: CopyFiles@2
   displayName: 'Copy ARM Template'
